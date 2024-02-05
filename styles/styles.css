@@ -1,0 +1,195 @@
+/* Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Additional Basic Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f0d6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.screen-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+
+.game-cont {
+    display: flex;
+    justify-content: center;
+    width: 18.75rem;
+    height: 18.75rem;
+    flex-wrap: wrap;
+}
+
+
+.cell {
+    flex: 1 1 30%;
+    width: 6.25rem;
+    height: 6.25rem;
+    border: 1px solid black;
+}
+
+/* Cell Border doubling fix */
+
+/* Removes left border except for first 3 vertical cells */
+
+.cell:not(.cell:nth-last-child(3n+3)) {
+    border-left: none
+}
+
+/* Removes bottom border on cells except last 3 */
+.cell:not(.cell:nth-last-child(-n+3)) {
+    border-bottom: none
+}
+
+.restart-btn {
+    background: radial-gradient(circle, rgba(255,0,0,0.9023984593837535) 0%, rgba(21,121,9,0.7511379551820728) 89%, rgba(21,121,9,0.7511379551820728) 89%);
+    font-size: large;
+    font-weight: 700;
+    color: #f5f0d6;
+    height: 3.5rem;
+    
+}
