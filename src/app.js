@@ -37,7 +37,7 @@ class NonPlayerCharacter {
     }
 
     #pickCell(blankCells) {
-        const index = Math.floor(0 + Math.random() * (blankCells.length - 0))
+        const index = Math.floor(Math.random() * blankCells.length)
         const cell = blankCells[index]
         return cell
     }
